@@ -1,0 +1,23 @@
+class Solution {
+public:
+    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+         int i=0;
+    int last=m+n-1;
+    if(m==0){
+        nums1=nums2;
+    }
+    while(i<=n){
+        if(last>=m){
+            nums1[last]=nums2[i];
+        }
+         last--;
+         i++;
+    }
+    
+    sort(nums1.begin(),nums1.end());
+
+    
+    
+}
+    
+};
